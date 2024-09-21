@@ -9,3 +9,6 @@ migrateup:
 
 migratedown:
 	migrate -path db/migration -database "postgresql://admin:secret@147.182.241.168:5432/go_test?sslmode=disable" -verbose down
+
+sqlc:
+	sqlc generate
